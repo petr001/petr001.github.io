@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personal page</title>
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+
+		.flex {
+			display: flex;
+			height: 100vh;
+			justify-content: center;
+		}
+
+		@keyframes loader {
+			from { width: 80px; height: 80px; }
+			to { width: 800px; height: 800px; }
+		}
+
+		.loader {
+			display: inline-flex;
+			width: 80px;
+			height: 80px;
+			align-self: center;
+			animation: loader 1s linear;
+			background-color: #ddd;
+			border-radius: 50%;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="flex">
+<div class="loader">
+	Loading
+</div>
+</div>
+
+</body>
+</html>
